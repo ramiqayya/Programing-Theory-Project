@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class EnemyMotion : MonoBehaviour
 {
-    private float xRange;
-    private float zRange;
+    public float xRange;
+    public float zRange;
     public float enemySpeed=10;
     Rigidbody enemyRb;
     // Start is called before the first frame update
     void Start()
     {
+        
         enemyRb = gameObject.GetComponent<Rigidbody>();
         InvokeRepeating("EnemyRandomMotion", 1, 2);
     }
@@ -21,7 +22,7 @@ public class EnemyMotion : MonoBehaviour
         
     }
 
-    void EnemyRandomMotion()
+    public virtual void EnemyRandomMotion()
     {
         xRange = Random.Range(-10, 10);
         zRange = Random.Range(-10, 10);
