@@ -31,7 +31,7 @@ public class MenuUIHandler : MonoBehaviour
 
     public void EnterName()
     {
-        MainManager.Instance.samerTaqatqa = inputField.text;
+        MainManager.Instance.playerName = inputField.text;
     }
    
 }

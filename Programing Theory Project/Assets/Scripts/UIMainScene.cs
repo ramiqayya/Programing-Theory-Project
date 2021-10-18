@@ -9,7 +9,7 @@ public class UIMainScene : MonoBehaviour
     public TextMeshProUGUI displayPlayerName;
     public void Awake()
     {
-        displayPlayerName.text ="Name: "+ MainManager.Instance.samerTaqatqa;
+        displayPlayerName.text ="Name: "+ MainManager.Instance.playerName;
     }
 
 
