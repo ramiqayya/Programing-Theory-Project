@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy2Attributes : EnemyMotion 
+public class Enemy2Attributes : EnemyMotion //INHERITANCE
 {
     private Rigidbody enemy2Rb;
     public GameObject target;
@@ -19,7 +19,7 @@ public class Enemy2Attributes : EnemyMotion
         transform.LookAt(target.transform);
     }
 
-    public override void EnemyRandomMotion()
+    public override void EnemyRandomMotion()//POLYMORPHISM
     {
         xRange = Random.Range(-10, 10);
         zRange = Random.Range(-10, 10);

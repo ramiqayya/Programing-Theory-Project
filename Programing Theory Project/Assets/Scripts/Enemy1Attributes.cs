@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy1Attributes : EnemyMotion
+public class Enemy1Attributes : EnemyMotion //INHERITANCE 
 {
     private Rigidbody squareRb;
     private float jump = 10;
@@ -16,14 +16,10 @@ public class Enemy1Attributes : EnemyMotion
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 
    
-    public override void EnemyRandomMotion()
+    public override void EnemyRandomMotion()//POLYMORPHISM
     {
         
         xRange = Random.Range(-10, 10);

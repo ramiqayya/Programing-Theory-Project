@@ -16,11 +16,7 @@ public class EnemyMotion : MonoBehaviour
         InvokeRepeating("EnemyRandomMotion", 1, 2);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 
     public virtual void EnemyRandomMotion()
     {
